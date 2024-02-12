@@ -6,16 +6,16 @@ on:
     branches:
       - 'main'
     # only build when important files change
-    paths:
-      - 'worker/**'
-      - '.github/workflows/call-docker-build-worker.yaml'
+    #paths:
+      #- 'worker/**'
+      #- '.github/workflows/call-docker-build-worker.yaml'
   pull_request:
     branches:
       - 'main'
     # only build when important files change
-    paths:
-      - 'worker/**'
-      - '.github/workflows/call-docker-build-worker.yaml'
+    #paths:
+      #- 'worker/**'
+      #- '.github/workflows/call-docker-build-worker.yaml'
   schedule:
     # re-run monthly to keep image fresh with upstream base images
     - cron: '0 12 15 * *'

@@ -16,9 +16,9 @@ on:
     #paths:
       #- 'worker/**'
       #- '.github/workflows/call-docker-build-worker.yaml'
-  schedule:
+  #schedule:
     # re-run monthly to keep image fresh with upstream base images
-    - cron: '0 12 15 * *'
+    #- cron: '0 12 15 * *'
 
 jobs:
   call-docker-build:

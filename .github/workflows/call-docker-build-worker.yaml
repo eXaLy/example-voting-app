@@ -25,7 +25,7 @@ jobs:
 
     name: Call Docker Build
 
-    uses: bretfisher/docker-build-workflow/.github/workflows/reusable-docker-build.yaml@main
+    uses: ./.github/workflows/reusable-docker-build.yaml
 
     permissions:
       contents: read

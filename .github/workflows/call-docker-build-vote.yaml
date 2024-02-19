@@ -16,16 +16,16 @@ on:
     paths:
       - 'vote/**'
       - '.github/workflows/call-docker-build-vote.yaml'
-  schedule:
+  #schedule:
     # re-run montly to keep image fesh with upstream base images
-    - cron: '0 12 15 * *'
+    #- cron: '0 12 15 * *'
 
 jobs:
   call-docker-build:
 
     name: Call Docker Build
 
-    uses: bretfisher/docker-build-workflow/.github/workflows/reusable-docker-build.yaml@main
+    uses: ./.github/workflows/reusable-docker-build.yaml
 
     permissions:
       contents: read
